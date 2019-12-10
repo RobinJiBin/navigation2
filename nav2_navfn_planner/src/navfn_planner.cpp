@@ -14,6 +14,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+//导航算法基于：globalDWA
 // Navigation Strategy based on:
 // Brock, O. and Oussama K. (1999). High-Speed Navigation Using
 // the Global Dynamic Window Approach. IEEE.

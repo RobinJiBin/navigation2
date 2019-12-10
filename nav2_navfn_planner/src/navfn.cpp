@@ -30,7 +30,7 @@
 // ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 // POSSIBILITY OF SUCH DAMAGE.
 
-//
+//导航功能计算：改进的Dijkstra方法计算欧式距离
 // Navigation function computation
 // Uses Dijkstra's method
 // Modified for Euclidean-distance computation
@@ -38,7 +38,7 @@
 // Path calculation uses no interpolation when pot field is at max in
 //   nearby cells
 //
-// Path calc has sanity check that it succeeded
+// Path calc has sanity check that it succeeded/完整性检查
 //
 
 #include "nav2_navfn_planner/navfn.hpp"
@@ -354,7 +354,7 @@ int NavFn::getPathLen() {return npath;}
     {overP[overPe++] = n; pending[n] = true;}}
 
 
-// Set up navigation potential arrays for new propagation
+// Set up navigation potential arrays for new propagation//传播繁殖
 
 void
 NavFn::setupNavFn(bool keepit)

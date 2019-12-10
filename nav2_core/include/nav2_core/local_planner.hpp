@@ -55,6 +55,8 @@ namespace nav2_core
 /**
  * @class LocalPlanner
  * @brief planner interface that acts as a virtual base class for all local planner plugins
+    规划器的虚基类接口，可以更换local planner算法插件
+    local planner功能：局部的路径规划，dwa动态窗口里找出一条路径。
  */
 class LocalPlanner
 {
@@ -62,7 +64,7 @@ public:
   using Ptr = std::shared_ptr<nav2_core::LocalPlanner>;
 
 
-  /**
+  /**没有构造??只有析构
    * @brief Virtual destructor
    */
   virtual ~LocalPlanner() {}

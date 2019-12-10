@@ -585,6 +585,7 @@ DWBLocalPlanner::transformGlobalPlan(
 
 }  // namespace dwb_core
 
+//注册planner作为nav2_core插件?
 // Register this planner as a nav2_core plugin
 PLUGINLIB_EXPORT_CLASS(dwb_core::DWBLocalPlanner,
   nav2_core::LocalPlanner)

@@ -38,6 +38,8 @@ class ProgressChecker;
  * @class nav2_controller::ControllerServer
  * @brief This class hosts variety of plugins of different algorithms to
  * complete control tasks from the exposed FollowPath action server.
+ 是一个生命周期节点
+ 管理算法插件，完成控制任务，路径跟随action server
  */
 class ControllerServer : public nav2_util::LifecycleNode
 {
